@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.joelespinal.codelabs.entities.TABLE_WORD
 import com.joelespinal.codelabs.entities.Word
 
 @Dao
@@ -15,6 +16,6 @@ interface WordDao {
     suspend fun insert(word: Word)
 
     //TODO Deleting all words
-    @Query("DELETE FROM word_table")
+    @Query("DELETE FROM $TABLE_WORD")
     suspend fun deleteAll()
 }
