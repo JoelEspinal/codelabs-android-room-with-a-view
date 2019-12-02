@@ -12,7 +12,7 @@ interface WordDao {
 
     // TODO Getting all words ordered alphabeticall
     @Query("SELECT * FROM $TABLE_WORD ORDER BY word ASC")
-    fun getAlphabetizedWords()
+    fun getAlphabetizedWords(): List<Word>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(word: Word)
