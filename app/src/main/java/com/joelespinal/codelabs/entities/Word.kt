@@ -1,4 +1,4 @@
-package com.joelespinal.codelabs
+package com.joelespinal.codelabs.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
