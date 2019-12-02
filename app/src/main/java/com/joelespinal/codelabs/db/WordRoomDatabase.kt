@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.joelespinal.codelabs.daos.WordDao
 import com.joelespinal.codelabs.entities.Word
 
 const val DATABASE_WORD = "word_database"
@@ -14,6 +15,8 @@ const val DATABASE_WORD = "word_database"
     exportSchema = false
 )
 abstract class WordRoomDatabase : RoomDatabase() {
+
+    abstract fun wordDao(): WordDao
 
     companion object {
 
