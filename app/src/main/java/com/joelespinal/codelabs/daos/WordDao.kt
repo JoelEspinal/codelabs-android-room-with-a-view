@@ -12,7 +12,7 @@ interface WordDao {
 
     // TODO Inserting a word
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(word: Word)
+    suspend fun insert(word: Word)
 
     //TODO Deleting all words
 
