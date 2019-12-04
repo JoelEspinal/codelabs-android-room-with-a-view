@@ -17,9 +17,7 @@ class WordListAdapter : RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    override fun getItemCount() = words.size
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
